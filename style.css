@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #ffffff;
+    background-image: url('pexels-photo-1097456.jpeg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+section {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    padding: 40px 30px;
+}
+
+h1,
+h2,
+h3 {
+    color: #ffffff;
+    text-shadow: 3px 3px 5px hsl(194, 72%, 67%);
+    margin-bottom: 20px;
+}
+
+p,
+li {
+    color: #e0e0e0;
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* === HEADER === */
+.site-header {
+    background-color: #6ffad0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* === FORM === */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #0077ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #005dd1;
+}
+
+/* === FOOTER === */
+.site-footer {
+    background-color: #6ffad0;
+    padding: 20px 30px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.site-footer p {
+    color: #000000;
+    margin: 5px 0;
+}
+
+.site-footer a {
+    color: #000;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+/* === RESPONSIVE NAVBAR WITHOUT HAMBURGER === */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+}
+
+/* === ADDITIONAL RESPONSIVE TWEAKS === */
+@media (max-width: 480px) {
+    body {
+        font-size: 0.95rem;
+    }
+
+    section {
+        padding: 30px 20px;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+}
